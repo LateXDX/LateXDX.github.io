@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="1.css">
+</head>
+
+<script src="common.js"></script>
+<script>
+// Funktio linkin painamiseen
+function redirectToNewPage(link) {
+    const date = getCurrentDate();
+    let clickCount = getClickCount(link) + 1; // Lisää 1 painamiseen
+    localStorage.setItem(`${date}_${link}`, clickCount); // Tallenna laskuri paikallisesti
+    window.location.href = link; // Ohjaa käyttäjä linkkiin
+
+}
+</script>
+<body>
+
+
+    <a href="Ilo.html" onclick="redirectToNewPage('Ilo.html'); return false;">
+        <img src="Kvuat/smile-5089.png" alt="Linkki 1">
+    </a>
+  
+
+
+    <a href="JuuJaa.html" onclick="redirectToNewPage('JuuJaa.html'); return false;">
+        <img src="Kvuat/emoticon-5091.png" alt="Linkki 2">
+    </a>
+
+
+    <a href="Suru.html" onclick="redirectToNewPage('Suru.html'); return false;">
+        <img src="Kvuat/sad-face-2691.png" alt="Linkki 3">
+    </a>
+
+   
+
+    <div>
+
+    <a href="Asetukset.html"> <img src="Kvuat/wheel.png" alt="HTML tutorial" style="width:20;height:20;"></a>
+    </div>
+
+<script>
+    window.onload = function() {
+            displayClickCounts();
+        };</script>
+
+<!--
+  <a href="2.html"> <img src="Kvuat/smile-5089.png" alt="HTML tutorial" style="width:300px;height:300px;"></a>
+
+    
+  <a href="2.html"> <img src="Kvuat/emoticon-5091.png" alt="HTML tutorial" style="width:300px;height:300px;"></a>
+
+    
+  <a href="2.html"> <img src="Kvuat/sad-face-2691.png" alt="HTML tutorial" style="width:300px;height:300px;"></a> -->
+</body>
+</html>

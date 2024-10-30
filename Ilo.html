@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="1.css">
+</head>
+<body>
+
+  <h1> Kiitos Palautteesta! </h1>
+
+  <button onclick="myFunction()">Takaisin kyselyynt</button>
+
+<script>
+function myFunction() {
+  location.replace("1.html")
+}
+</script>
+
+<script>
+setTimeout(function() {
+  window.location.href = "1.html";
+}, 2000);
+</script>
+<!--
+<script>
+
+(function () { 
+const idleDurationSecs = 1; 
+const redirectUrl = '1.html';
+let idleTimeout;  
+
+ const resetIdleTimeout = function () { 
+  
+                // Clears the existing timeout 
+                if (idleTimeout)  
+                    clearTimeout(idleTimeout); 
+  
+                // Set a new idle timeout to load the 
+                // redirectUrl after idleDurationSecs 
+                idleTimeout = setTimeout(() => location.href  
+                    = redirectUrl, idleDurationSecs * 1000); 
+            }; 
+
+            ['click', 'touchstart', 'mousemove'] 
+                .forEach(evt => document.addEventListener( 
+                    evt, resetIdleTimeout, false) 
+            ); 
+          })(); 
+
+
+  </script>-->
+
+</body>
+</html>
