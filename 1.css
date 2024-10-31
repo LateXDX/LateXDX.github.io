@@ -1,17 +1,61 @@
 body {
-    background-color: white;
+    background-color: greenyellow;
   }
+
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
   h1 {
-    color: red;
+    color: black;
+    font-size: 75px;
   }
+
   p {
     color:black;
   }
 
-  icon_img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  .p2 {
+
+    font-size: 30px;
+
+  }
+
+  img {
+    width: 400px;
+    height: 400px
+  }
+
+  .icon_img {
+    
     padding: 5px;
-    width: 50;
+    width: 50px;
     height: 50px;
   }
+
+  .header {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: chartreuse;
+    width: 70%;
+  }
+
+  
+  .napit {
+    padding: 20px;
+    text-align: center;
+    background-color: chartreuse;
+    width: 70%;
+    margin: auto;
+  }
+  .footer {
+    padding: 20px;
+    width: 70%;
+    text-align: center;
+    background: chartreuse;
+    margin: auto;
+  }
+
