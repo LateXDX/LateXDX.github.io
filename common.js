@@ -17,3 +17,5 @@ function displayClickCounts() {
     document.getElementById('link2-count').innerText = getClickCount('JuuJaa.html');
     document.getElementById('link3-count').innerText = getClickCount('Suru.html');
 }
+
+
