@@ -12,10 +12,16 @@
         window.onload = function() {
             displayClickCounts();
             let userData = localStorage.getItem("userData");
-
-            emailjs.init("720RfZGjWuPEhaou9");
         };
     </script>
+
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+    emailjs.init('720RfZGjWuPEhaou9')
+  </script>
+
 </head>
 <body>
     <h1>Painamismäärät</h1>
@@ -27,30 +33,7 @@
     <a href="index.html">Takaisin etusivulle</a>
 
     <button onclick="sendEmail()">Lähetä sähköposti</button>
-
-<script>
-
-emailjs.init("720RfZGjWuPEhaou9");  // Vaihda tämä omaan API keyhisi
-// Tämän jälkeen luo funktio, joka lähettää sähköpostin
-    function sendEmail() {
-        // Haetaan localStorage-data (esimerkki)
-        let userData = localStorage.getItem("userData");
     
-        // Valmistellaan viesti
-        let templateParams = {
-            to_name: "Late", // Vaihda tähän vastaanottajan nimi
-            user_message: userData, // Liitetään localStorage-data viestiin
-            from_email: "Latentestailut@gmail.com", // Lähettäjän sähköpostiosoite
-        };
-    
-        // Lähetetään sähköposti EmailJS:llä
-        emailjs.send("service_hd3xjpa", "template_r263zqt", templateParams)
-            .then(function(response) {
-                console.log("Sähköposti lähetetty onnistuneesti!", response);
-            }, function(error) {
-                console.log("Virhe lähetyksessä:", error);
-            });
-    }</script>
   
 </body>
 </html>
