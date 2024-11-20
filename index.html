@@ -25,13 +25,10 @@ function redirectToNewPage(link) {
     <a href="Ilo.html" onclick="redirectToNewPage('Ilo.html'); return false;">
         <img src="Kvuat/smile-5089.png" alt="Linkki 1">
     </a>
-  
-
 
     <a href="JuuJaa.html" onclick="redirectToNewPage('JuuJaa.html'); return false;">
         <img src="Kvuat/emoticon-5091.png" alt="Linkki 2">
     </a>
-
 
     <a href="Suru.html" onclick="redirectToNewPage('Suru.html'); return false;">
         <img src="Kvuat/sad-face-2691.png" alt="Linkki 3">
@@ -54,7 +51,9 @@ function redirectToNewPage(link) {
             displayClickCounts();
         };
         
-        window.onload = startEmailScheduler;
+        window.onload = function() {
+            startEmailScheduler();
+        };
         </script>
 
 <!--

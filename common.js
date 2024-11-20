@@ -19,7 +19,6 @@ function displayClickCounts() {
 }
 
 function checkAndSendEmail() {
-    const now = new Date();
     const targetHour = 14; // Aika, jolloin sähköposti lähetetään (12:00)
 
     // Tarkista, onko nykyinen aika klo 12:00
@@ -55,6 +54,3 @@ function startEmailScheduler() {
     setInterval(checkAndSendEmail, 60000); // Tarkistaa joka minuutti
 }
 
-window.onload = function() {
-    scheduleDailyEmail();
-};

@@ -40,7 +40,7 @@ body {
     padding: 20px;
     text-align: center;
     background-color: chartreuse;
-    width: 70%;
+    width: 80%;
   }
 
   
@@ -48,12 +48,12 @@ body {
     padding: 20px;
     text-align: center;
     background-color: chartreuse;
-    width: 70%;
+    width: 80%;
     margin: auto;
   }
   .footer {
     padding: 20px;
-    width: 70%;
+    width: 80%;
     text-align: center;
     background: chartreuse;
     margin: auto;
